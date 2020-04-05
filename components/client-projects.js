@@ -94,6 +94,9 @@ const ClientProjects = () => {
     //   image: "little-lotus.png",
     //   description: "Online Retail Store",
     // },
+    // {
+    // The boating shed
+    // Xtreme Fishing Charters
   ];
 
   return (
