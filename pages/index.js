@@ -1,27 +1,16 @@
-import Head from "next/head";
+import React from "react";
 import Meta from "../components/meta";
+import Landing from "../components/landing";
 import SideProjects from "../components/side-projects";
 import Footer from "../components/footer";
-import Emoji from "react-emoji-render";
+
 import "../scss/style.scss";
 
 const Index = () => (
   <>
     <Meta />
     <section className="view-container">
-      <article style={{ backgroundImage: `url('/images/pawelcz1.jpg')` }}>
-        <header>
-          <h1>
-            Hi, I'm Denham
-            <Emoji text="👋️" />
-          </h1>
-        </header>
-        <hr />
-        <p className="sub-header">
-          I am a full stack software developer and co-founder at{" "}
-          <a href="https://avolabs.io">avo labs</a>
-        </p>
-      </article>
+      <Landing />
       <article
         className="section-inner"
         style={{ backgroundImage: `url('/images/pawelcz2.jpg')` }}
@@ -32,7 +21,7 @@ const Index = () => (
           JavaScript. I studied at Rhodes University and the University of Cape
           Town in Economics and Computer Science and have been working in
           industry for a few years. I am a blockchain enthusiast, I love to
-          explore and like to focus on social impact projects.
+          explore and I like to focus on social impact projects.
         </p>
       </article>
       <article
@@ -222,12 +211,6 @@ const Index = () => (
         box-sizing: border-box;
       }
 
-      h1 {
-        text-align: center;
-        font-size: 3rem;
-        padding: 0;
-        margin: 0;
-      }
       h2 {
         text-align: center;
         font-size: 2rem;
@@ -241,13 +224,9 @@ const Index = () => (
         padding: 0;
         margin: 0.4rem;
       }
-      .sub-header {
-        font-size: 1rem;
-        letter-spacing: 0.3rem;
-        text-transform: uppercase;
-      }
+
       a {
-        color: #0077ff;
+        color: #61dafb;
         text-decoration: none;
       }
 
@@ -257,13 +236,6 @@ const Index = () => (
         text-decoration: underline;
       }
 
-      .social-icon {
-        display: inline;
-        margin: 1rem;
-      }
-      .social-icon img {
-        width: 40px;
-      }
       .grid {
         display: flex;
         flex-flow: row wrap;
