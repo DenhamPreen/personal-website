@@ -18,25 +18,25 @@ const ClientProjects = () => {
       name: "MeatLessMay",
       link: "https://meatlessmay.me",
       image: "meatlessmay.gif",
-      description: "sustainable diet challenge",
+      description: "Sustainable diet challenge",
     },
     {
-      name: "Stackr",
-      link: "https://www.gostackr.com/",
-      image: "stackr.svg",
-      description: "Site Updates",
+      name: "Lima Capital",
+      link: "https://lima.capital",
+      image: "lima-capital.svg",
+      description: "Machine Learning Investment Management",
+    },
+    {
+      name: "Clima Investments",
+      link: "https://clima.investments/",
+      image: "clima-investments.png",
+      description: "Sustainable Investment Management",
     },
     {
       name: "Plastic Detox",
       link: "https://plasticdetox.me",
       image: "plasticdetox.png",
       description: "Plastic Reduction Campaign",
-    },
-    {
-      name: "Lima Capital",
-      link: " https://lima.capital",
-      image: "lima-capital.svg",
-      description: "Machine Learning Investment Management",
     },
     {
       name: "Capitec",
@@ -51,35 +51,36 @@ const ClientProjects = () => {
       description: "MecMovies - Online course",
     },
     {
+      name: "Take Ctrl",
+      link: "https://www.takectrl.co.za/",
+      image: "take-ctrl.png",
+      description: "Insurance App",
+    },
+    {
       name: "Center for renewable and sustainable energy studies",
       link: "http://academic.sun.ac.za/crsespower/index.html",
       image: "crses.png",
       description: "Energy Data Visualisation",
     },
     {
-      name: "Take Ctrl",
-      link: "https://www.takectrl.co.za/",
-      image: "take-ctrl.png",
-      description: "App development",
-    },
-    {
       name: "HouseME",
       link: "https://house.me",
       image: "houseme.png",
-      description: "Static Site",
+      description: "PropTech Rental Company",
     },
 
     {
       name: "Drive South Africa",
       link: "https://www.drivesouthafrica.com/",
       image: "dsa.jpg",
-      description: "Site Performance Improvements",
+      description: "Car Rental Platform",
     },
+
     {
-      name: "Clima Investments",
-      link: "https://clima.investments/",
-      image: "clima-investments.png",
-      description: "Sustainable Investment Management",
+      name: "Stackr",
+      link: "https://www.gostackr.com/",
+      image: "stackr.svg",
+      description: "Fintech Savings Solutions",
     },
     {
       name: "Singita",
@@ -87,18 +88,18 @@ const ClientProjects = () => {
       image: "singita.png",
       description: "Operations Management Application",
     },
-    {
-      name: "Little Lotus",
-      link: "http://littlelotus.co.za",
-      image: "little-lotus.png",
-      description: "Online Retail Store",
-    },
+    // {
+    //   name: "Little Lotus",
+    //   link: "http://littlelotus.co.za",
+    //   image: "little-lotus.png",
+    //   description: "Online Retail Store",
+    // },
   ];
 
   return (
     <article style={{ backgroundImage: `url('/images/pawelcz4.jpg')` }}>
-      <div className="section-inner">
-        <h2 style={{ marginTop: "2rem" }}>Projects for Clients </h2>
+      <div className="section-inner" style={{ marginBottom: "3rem" }}>
+        <h2 style={{ margin: "3rem 1rem 3rem 1rem" }}>Projects for Clients </h2>
         <div className="grid">
           {clientProjects.map((client) => (
             <div className="portfolio-item">
@@ -130,14 +131,15 @@ const ClientProjects = () => {
       <style jsx>{`
         .portfolio-item {
           flex: none;
-          width: 20%;
+          width: 14%;
           display: flex;
           flex-flow: column nowrap;
-          justify-content: center;
+          justify-content: flex-start;
+          align-items: flex-start;
         }
         .portfolio-item-inner {
           width: 80%;
-          margin: auto;
+          margin: 5px auto;
         }
         .portfolio-item-link {
         }
