@@ -87,9 +87,11 @@ const Index = () => (
         margin: auto;
       }
       .portfolio-item-link {
+        display: block;
         margin: auto;
       }
       .portfolio-item-logo {
+        display: block;
         width: 100%;
         border-radius: 10px;
       }
