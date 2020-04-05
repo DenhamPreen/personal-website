@@ -4,19 +4,22 @@ import Emoji from "react-emoji-render";
 const Landing = () => {
   return (
     <article style={{ backgroundImage: `url('/images/pawelcz1.jpg')` }}>
-      <header>
-        <h1>
-          Hi, I'm Denham
-          <Emoji text="👋️" />
-        </h1>
-      </header>
-      <hr />
-      <p className="sub-header">
-        I am a full stack software developer and co-founder at{" "}
-        <a href="https://avolabs.io">avo labs</a>
-      </p>
-
+      <div className="section-inner">
+        <header>
+          <h1>
+            Hi, I'm Denham
+            <Emoji text="👋️" />
+          </h1>
+        </header>
+        <p className="sub-header">
+          I am a full stack software developer and co-founder at{" "}
+          <a href="https://avolabs.io">avo labs</a>
+        </p>
+      </div>
       <style jsx>{`
+        article {
+          padding: 4em 4em;
+        }
         h1 {
           text-align: center;
           font-size: 3rem;

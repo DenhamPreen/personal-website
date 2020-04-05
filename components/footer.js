@@ -2,10 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <article
-      className="section-inner"
-      style={{ backgroundImage: `url('/images/pawelcz6.jpg')` }}
-    >
+    <article style={{ backgroundImage: `url('/images/pawelcz6.jpg')` }}>
       <footer>
         <a
           href="https://medium.com/@denhampreen"
@@ -56,6 +53,7 @@ const Footer = () => {
           flex-flow: row wrap;
           justify-content: center;
           align-items: center;
+          padding: 4em 4em;
         }
         .social-icon {
           display: inline;
