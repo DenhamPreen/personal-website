@@ -78,6 +78,7 @@ const ClientProjects = () => {
               Machine Learning Investment Management
             </p>
           </div>
+
           <div className="portfolio-item">
             <div className="portfolio-item-logo-container">
               <a
@@ -97,13 +98,85 @@ const ClientProjects = () => {
             </p>
           </div>
         </div>
-        <p>UCT</p>
-        <p>Renewable and sustainable energy studies</p>
-        <p>takectrl</p>
-        <p>HouseMe</p>
+        <div className="grid">
+          <div className="portfolio-item">
+            <div className="portfolio-item-logo-container">
+              <a
+                href="http://www.ebe.uct.ac.za/ebe/study/mecheng"
+                target="_blank"
+                className="portfolio-item-link"
+              >
+                <img
+                  src="/images/portfolio/clients/uct.jpg"
+                  className="portfolio-item-logo"
+                  alt="UCT"
+                />
+              </a>
+            </div>
+            <p className="portfolio-item-description">
+              MecMovies - Online course
+            </p>
+          </div>
+          <div className="portfolio-item">
+            <div className="portfolio-item-logo-container">
+              <a
+                href="http://academic.sun.ac.za/crsespower/index.html"
+                target="_blank"
+                className="portfolio-item-link"
+              >
+                <img
+                  src="/images/portfolio/clients/crses.png"
+                  className="portfolio-item-logo"
+                  alt="Center for renewable and sustainable energy studies"
+                />
+              </a>
+            </div>
+            <p className="portfolio-item-description">
+              Energy Data Visualisation
+            </p>
+          </div>
+          <div className="portfolio-item">
+            <div className="portfolio-item-logo-container">
+              <a
+                href="https://www.takectrl.co.za/"
+                target="_blank"
+                className="portfolio-item-link"
+              >
+                <img
+                  src="/images/portfolio/clients/take-ctrl.png"
+                  className="portfolio-item-logo"
+                  alt="Take Ctrl"
+                />
+              </a>
+            </div>
+            <p className="portfolio-item-description">App development</p>
+          </div>
+          <div className="portfolio-item">
+            <div className="portfolio-item-logo-container">
+              <a
+                href="https://house.me"
+                target="_blank"
+                className="portfolio-item-link"
+              >
+                <img
+                  src="/images/portfolio/clients/houseme.png"
+                  className="portfolio-item-logo"
+                  alt="HouseME"
+                />
+              </a>
+            </div>
+            <p className="portfolio-item-description">Static Site</p>
+          </div>
+          <div className="portfolio-item"></div>
+        </div>
+        <p>SAT, Singita,DSA, Clima Investments, Little Lotus</p>
       </div>
 
-      <style jsx>{``}</style>
+      <style jsx>{`
+        .portfolio-item-logo-container {
+          width: 30%;
+        }
+      `}</style>
     </article>
   );
 };
