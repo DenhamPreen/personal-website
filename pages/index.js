@@ -3,6 +3,7 @@ import Meta from "../components/meta";
 import Landing from "../components/landing";
 import About from "../components/about";
 import AvoLabsProjects from "../components/avo-labs-projects";
+import ClientProjects from "../components/client-projects";
 import SideProjects from "../components/side-projects";
 import Footer from "../components/footer";
 
@@ -15,91 +16,8 @@ const Index = () => (
       <Landing />
       <About />
       <AvoLabsProjects />
+      <ClientProjects />
 
-      <article style={{ backgroundImage: `url('/images/pawelcz4.jpg')` }}>
-        <div className="section-inner">
-          <h2>Projects for Clients </h2>
-          <div className="grid">
-            <div className="portfolio-item">
-              <div className="portfolio-item-logo-container">
-                <a
-                  href="https://finka.ch"
-                  target="_blank"
-                  className="portfolio-item-link"
-                >
-                  <img
-                    src="/images/portfolio/clients/finka.svg"
-                    className="portfolio-item-logo"
-                    alt="finka token"
-                  />
-                </a>
-              </div>
-              <p className="portfolio-item-description">
-                Democratising alternative asset classes
-              </p>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-item-logo-container">
-                <a
-                  href="https://meatlessmay.me"
-                  target="_blank"
-                  className="portfolio-item-link"
-                >
-                  <img
-                    src="/images/portfolio/clients/meatlessmay.svg"
-                    className="portfolio-item-logo"
-                    alt="MeatLessMay"
-                  />
-                </a>
-              </div>
-              <p className="portfolio-item-description">
-                sustainable diet challenge
-              </p>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-item-logo-container">
-                <a
-                  href="https://plasticdetox.me"
-                  target="_blank"
-                  className="portfolio-item-link"
-                >
-                  <img
-                    src="/images/portfolio/clients/plasticdetox.svg"
-                    className="portfolio-item-logo"
-                    alt="Plastic Detox"
-                  />
-                </a>
-              </div>
-              <p className="portfolio-item-description">
-                Plastic Reduction Campaign
-              </p>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-item-logo-container">
-                <a
-                  href="https://lima.capital"
-                  target="_blank"
-                  className="portfolio-item-link"
-                >
-                  <img
-                    src="/images/portfolio/clients/lima-capital.svg"
-                    className="portfolio-item-logo"
-                    alt="Lima Capital"
-                  />
-                </a>
-              </div>
-              <p className="portfolio-item-description">
-                Machine Learning Investment Management
-              </p>
-            </div>
-          </div>
-          <p>Lima Capital</p>
-          <p>Capitec</p>
-          <p>UCT</p>
-          <p>Renewable and sustainable energy studies</p>
-          <p>takectrl</p>
-        </div>
-      </article>
       <SideProjects />
       <Footer />
     </section>

@@ -1,5 +1,4 @@
 import React from "react";
-import Emoji from "react-emoji-render";
 
 const Landing = () => {
   return (
