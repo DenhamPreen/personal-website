@@ -2,6 +2,7 @@ import React from "react";
 import Meta from "../components/meta";
 import Landing from "../components/landing";
 import About from "../components/about";
+import AvoLabsProjects from "../components/avo-labs-projects";
 import SideProjects from "../components/side-projects";
 import Footer from "../components/footer";
 
@@ -13,86 +14,8 @@ const Index = () => (
     <section className="view-container">
       <Landing />
       <About />
+      <AvoLabsProjects />
 
-      <article style={{ backgroundImage: `url('/images/pawelcz3.jpg')` }}>
-        <div className="section-inner">
-          <h2>Projects with Avo Labs</h2>
-          <div className="grid">
-            <div className="portfolio-item">
-              <div className="portfolio-item-logo-container">
-                <a
-                  href="https://wildcards.world"
-                  target="_blank"
-                  className="portfolio-item-link"
-                >
-                  <img
-                    src="/images/portfolio/avolabs/wildcards.svg"
-                    className="portfolio-item-logo"
-                    alt="Wildcards"
-                  />
-                </a>
-              </div>
-              <p className="portfolio-item-description">
-                Always raising funds for conservation
-              </p>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-item-logo-container">
-                <a
-                  href="https://alwaysforsale.io"
-                  className="portfolio-item-link"
-                  target="_blank"
-                >
-                  <img
-                    src="/images/portfolio/avolabs/alwaysforsale.svg"
-                    className="portfolio-item-logo"
-                    alt="Always for sale art gallery"
-                  />
-                </a>
-              </div>
-              <p className="portfolio-item-description">Virtual art gallery</p>
-            </div>
-
-            <div className="portfolio-item">
-              <div className="portfolio-item-logo-container">
-                <a
-                  href="https://dao.care"
-                  target="_blank"
-                  className="portfolio-item-link"
-                >
-                  <img
-                    src="/images/portfolio/avolabs/daocare.svg"
-                    className="portfolio-item-logo"
-                    alt="dao care"
-                  />
-                </a>
-              </div>
-              <p className="portfolio-item-description">
-                Community endowment fund
-              </p>
-            </div>
-
-            <div className="portfolio-item">
-              <div className="portfolio-item-logo-container">
-                <a
-                  href="https://carboncredits.club"
-                  target="_blank"
-                  className="portfolio-item-link"
-                >
-                  <img
-                    src="/images/portfolio/avolabs/carboncreditsclub.svg"
-                    className="portfolio-item-logo"
-                    alt="carbon credits club"
-                  />
-                </a>
-              </div>
-              <p className="portfolio-item-description">
-                Carbon emissions solution
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
       <article style={{ backgroundImage: `url('/images/pawelcz4.jpg')` }}>
         <div className="section-inner">
           <h2>Projects for Clients </h2>
@@ -236,6 +159,7 @@ const Index = () => (
         justify-content: space-between;
         width: 100%;
       }
+
       .portfolio-item {
         flex: 1;
       }
@@ -259,8 +183,18 @@ const Index = () => (
         font-weight: 600;
       }
       @media only screen and (max-width: 768px) {
+        .section-inner {
+          padding: 2em;
+        }
         h2 {
           margin-bottom: 1rem;
+        }
+        .portfolio-item {
+          flex: none;
+          width: 46%;
+        }
+        .portfolio-item-description {
+          font-size: 0.5rem;
         }
       }
     `}</style>
