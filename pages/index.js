@@ -17,7 +17,6 @@ const Index = () => (
       <About />
       <AvoLabsProjects />
       <ClientProjects />
-
       <SideProjects />
       <Footer />
     </section>

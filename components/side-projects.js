@@ -9,7 +9,7 @@ const SideProjects = () => {
           <div className="portfolio-item">
             <div className="portfolio-item-logo-container">
               <a
-                href="https://whereitstarted.io"
+                href="https://podcast-site-neon-one.now.sh/"
                 target="_blank"
                 className="portfolio-item-link"
               >
@@ -20,7 +20,7 @@ const SideProjects = () => {
                 />
               </a>
             </div>
-            <p className="portfolio-item-description">Start up podcast</p>
+            <p className="portfolio-item-description">Founders podcast</p>
           </div>
           <div className="portfolio-item">
             <div className="portfolio-item-logo-container">
